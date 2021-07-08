@@ -54,3 +54,34 @@ var swiper = new Swiper(".discover__container", {
     slideShadows: true,
   },
 });
+
+/*  ========== VIDEO ========== */
+const videoFile = document.getElementById("video-file"),
+  videoButton = document.getElementById("video-button"),
+  videoIcon = document.getElementById("video-icon");
+
+function playPause() {
+  if (videoFile.paused) {
+    // Play video
+    videoFile.play();
+
+    // Change icon
+    videoIcon.classList.add("ri-pause-circle-line");
+    videoIcon.classList.remove("ri-play-circle-line");
+  } else {
+    //Pause video
+    videoFile.pause();
+    // Change icon again
+    videoIcon.classList.remove("ri-pause-circle-line");
+    videoIcon.classList.add("ri-play-circle-line");
+  }
+}
+
+videoButton.addEventListener("click", playPause);
+
+function finalVideo() {
+  // When the video ends, icon changes
+  videoIcon.classList.remove("ri-pause-circle-line");
+  videoIcon.classList.add("ri-play-circle-line");
+}
+videoFile.addEventListener("ended", finalVideo);
