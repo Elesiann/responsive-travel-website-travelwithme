@@ -594,22 +594,37 @@ input {
   margin-bottom: var(--mb-2-5);
 }
 
-.subscribe__form{
+.subscribe__form {
   background-color: var(--input-color);
-  padding: .5rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
 }
 
-.subscribe_input{
+.subscribe_input {
   width: 70%;
-  padding-right: .5rem;
+  padding-right: 0.5rem;
   background-color: var(--input-color);
   color: var(--text-color);
 }
 
-.subscribe_input::placeholder{
+.subscribe_input::placeholder {
   color: var(--text-color);
 }
 
 /* ====================== SPONSORS  ====================== */
+.sponsor__container {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  row-gap: 3.5rem;
+}
+
+.sponsor__img {
+  width: 100px;
+  filter: invert(0.5);
+  transition: var(--img-transition);
+}
+
+.sponsor__content:hover .sponsor__img {
+  filter: invert(0.2);
+}
