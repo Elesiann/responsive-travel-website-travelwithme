@@ -238,6 +238,20 @@ input {
   color: var(--title-color);
 }
 
+/* ACTIVE LINK */
+.active-link {
+  position: relative;
+  color: var(--title-color);
+}
+.active-link::before {
+  content: "";
+  position: absolute;
+  background-color: var(--title-color);
+  width: 100%;
+  height: 2px;
+  bottom: -0.25rem;
+}
+
 /* ====================== HOME ====================== */
 .home__img {
   position: absolute;
@@ -296,6 +310,7 @@ input {
   right: 0;
   bottom: 1rem;
   width: 228px;
+  border-radius: 3%;
 }
 
 .home__info-title {
@@ -329,6 +344,7 @@ input {
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
   transition: 0.3s;
+  border-radius: 3%;
 }
 
 .button:hover {
@@ -723,4 +739,21 @@ input {
   opacity: 1;
 }
 
-/* SHOW SCROLL */
+/* SHOW SCROLL UP */
+.show-scroll {
+  bottom: 5rem;
+}
+
+/*  SCROLL BAR */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
