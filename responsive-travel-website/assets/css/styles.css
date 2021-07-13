@@ -632,7 +632,7 @@ input {
   padding: 2.5rem 0;
 }
 
-.subscribe__title,
+.subscribe__title, 
 .subscribe__description {
   color: var(--white-color);
 }
@@ -644,19 +644,19 @@ input {
 
 .subscribe__form {
   background-color: var(--input-color);
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
 }
 
-.subscribe_input {
+.subscribe__input {
   width: 70%;
-  padding-right: 0.5rem;
+  padding-right: .5rem;
   background-color: var(--input-color);
   color: var(--text-color);
 }
 
-.subscribe_input::placeholder {
+.subscribe__input::placeholder {
   color: var(--text-color);
 }
 
