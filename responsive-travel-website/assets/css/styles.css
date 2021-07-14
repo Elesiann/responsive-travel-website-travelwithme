@@ -157,6 +157,10 @@ input {
   outline: none;
 }
 
+.main{
+  overflow-x: hidden;
+}
+
 /* ===== REUSABLE CSS CLASSES ===== */
 .section {
   padding: 4.5rem 0 2.5rem;
@@ -749,7 +753,7 @@ input {
 
 .scrollup {
   position: fixed;
-  right: 1rem;
+  right: 4rem;
   bottom: -20%;
   background-color: none;
   padding: 0rem;
